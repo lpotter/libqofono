@@ -88,7 +88,7 @@ void QOfonoSimManager::setModemPath(const QString &path)
 
         Q_EMIT modemPathChanged(path);
     }
-    QTimer::singleShot(200,this,SLOT(getAllProperties()));
+    QTimer::singleShot(500,this,SLOT(getAllProperties()));
 }
 
 void QOfonoSimManager::getAllProperties()
